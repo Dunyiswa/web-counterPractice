@@ -41,6 +41,6 @@ jobs:
 
     - name: Run tests
       run: 
-        python test.py
+        python tests.py
  
  
