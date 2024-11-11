@@ -1,0 +1,30 @@
+name: Test Web Counter
+ 
+# events
+on:
+  push:
+    branches:
+      - main
+ 
+# jobs
+ 
+jobs:
+ 
+# list of jobs
+ 
+test:
+  # where our code will run, GitHub self-hosted runner
+  runs-on: ubuntu-latest
+ 
+  # list of steps
+ 
+  steps:
+ 
+  # clone our code  (checkout)
+    - name: Checkout code
+    - uses: actions/checkout@v2
+ 
+    - name: See files
+    - run: ls -lah
+ 
+ 
